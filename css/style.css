@@ -1,0 +1,649 @@
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
+*/
+body {
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.customers {
+  font-family: "Playfair Display", serif;
+}
+
+nav > a,
+p,
+button,
+quote {
+  font-family: "Montserrat", sans-serif;
+}
+
+ul > li {
+  font-family: "Poppins", sans-serif;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2em 2.5em;
+  background-color: #fef0de;
+}
+
+button {
+  font-size: clamp(1em, 3vw, 1.3em);
+  background-color: #161515;
+  border: 1px solid black;
+  color: white;
+  padding: 13px 20px;
+  border-radius: 28px;
+  transition: all 200ms ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #b1454a;
+  border: 1px solid #b1454a;
+}
+
+.subtitle-red {
+  color: #b1454a;
+}
+
+#star-color {
+  color: #fbd446;
+}
+
+.check-red {
+  color: #b14550;
+}
+
+.centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header-section .logo-header {
+  text-align: center;
+  background-color: #b1454a;
+  padding: 1.9em 0em;
+}
+
+#header-section {
+  background-color: #ffeff0;
+}
+
+footer nav {
+  background-color: #fef0de;
+}
+
+.navigation-bar {
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 1.9em 0em;
+}
+
+.navigation-bar nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0em 1em;
+  font-size: clamp(1em, 4vw, 1.2em);
+  color: black;
+  transition: all 150ms ease-in-out;
+}
+
+.navigation-bar nav a:hover {
+  color: #b1454a;
+  cursor: pointer;
+}
+
+.logo-sushiman {
+  max-width: 11.25em;
+  min-width: 7.5em;
+  width: 30%;
+}
+
+/* Clase reutilizable d-flex flex-column justify-center*/
+
+.flex-column-justifycenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* First Section */
+
+#first-section,
+#second-section,
+#header-section {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin: 0 auto;
+}
+
+#first-section .left-first-section {
+  background-color: #b1454a;
+}
+
+#first-section .left-first-section img {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  padding: 1.9em 0em;
+}
+
+#first-section .right-first-section {
+  align-items: center;
+  padding: 0.7em 3.1em;
+  background-color: #ffeff0;
+}
+
+#first-section .right-first-section h1 {
+  font-size: 3.75em;
+  margin-top: 1.25em;
+  margin-bottom: 1em;
+}
+
+#first-section .right-first-section p {
+  margin: 2.19em 0em;
+  font-size: 1.125em;
+}
+
+/*Second Section*/
+#second-section {
+  margin: 0px;
+}
+#second-section div {
+  padding: 2.5em 0.625em;
+}
+
+#second-section img {
+  display: block;
+  margin: 1.25em auto;
+  width: 70%;
+  max-width: 18.75em;
+}
+
+#second-section button {
+  display: block;
+  margin: 1em auto;
+}
+
+#second-section .left-second-section {
+  background-color: #f8eddf;
+}
+
+#second-section .right-second-section {
+  padding: 1.875em 2.82em;
+}
+
+h2 {
+  font-size: 3.125em;
+}
+
+/*Third Section*/
+
+#third-section {
+  background-color: #b1454a;
+  margin: 0em;
+  padding-bottom: 1.75em;
+}
+
+h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 2.5em;
+  text-align: center;
+  color: white;
+  padding-top: 1.7em;
+  padding-bottom: 1.5em;
+}
+
+#third-section .options-japanese {
+  width: 1.25em;
+}
+
+#third-section .navigation-sushis {
+  text-align: center;
+  margin: 1.875em 0em;
+}
+
+#third-section nav a {
+  border: 1px solid white;
+  padding: 0.95em 1.25em;
+  margin: 0em 0.625em;
+  border-radius: 1.875em;
+  color: white;
+  text-decoration: none;
+  font-size: 1.19em;
+  transition: all 180ms ease-in-out;
+}
+#third-section nav a:hover {
+  background-color: #161515;
+  border: 1px solid #161515;
+}
+
+#third-section .cards {
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  grid-gap: 0em;
+  margin: 0.63em auto;
+  width: 90%;
+}
+
+#third-section .card {
+  border-radius: 25px;
+  margin: 0.94em;
+  padding: 0.94em;
+  text-align: center;
+}
+
+#third-section .card-small {
+  margin: 1.75em;
+  border: 1px solid #f0f0f048;
+  background-color: #f0f0f02f;
+  color: white;
+}
+#third-section .card-main {
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+}
+
+#third-section .cards img {
+  width: 75%;
+}
+
+h5 {
+  font-size: 1.25em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+#third-section .card-main h5 {
+  font-size: 1.69em;
+  color: #585858;
+}
+
+#third-section .star-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#third-section .cards p {
+  margin-top: 0.94em;
+  margin-bottom: 1.875em;
+  font-size: 1.125em;
+}
+
+#third-section button {
+  text-align: center;
+  display: block;
+  margin: 1.25em auto;
+  transition: all 120ms ease-in-out;
+}
+
+#third-section button:hover {
+  color: white;
+  background-color: #2c2b2b;
+}
+
+/* Fourth Section */
+#fourth-section .sides-50 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#fourth-section .sides-50 img {
+  width: 55%;
+  max-width: 25em;
+  display: block;
+  margin: 4.375em auto;
+}
+
+#fourth-section .sides-50 .half-beige {
+  background-color: #fef0de;
+}
+
+#fourth-section .sides-50 .half-white {
+  margin: 0em auto;
+  padding: 0.625em 3.125em;
+}
+
+h4 {
+  font-size: 2.5em;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+#fourth-section .sides-50 ul {
+  padding-inline-start: 1em;
+}
+
+#fourth-section .sides-50 ul li {
+  list-style: none;
+}
+
+/* Fifth Section */
+
+#fifth-section {
+  background-color: #b1454a;
+  padding: 6.25em 0.94em;
+  text-align: center;
+}
+
+#fifth-section h1 {
+  display: block;
+  margin: 0em;
+  padding: 0.625em;
+  color: white;
+  font-size: 3.75em;
+}
+
+#fifth-section p {
+  color: white;
+  padding: 1.25em 0.94em;
+}
+
+#fifth-section button:hover {
+  background-color: #313131;
+}
+
+#fifth-section form input {
+  padding: 0.82em 1.25em;
+  margin: 0em 0.94em;
+  font-size: 1.25em;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 1.75em;
+}
+
+/* FOOTER */
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media nav a {
+  margin: 0em 0.625em;
+  font-size: 1.3125em;
+  color: #b1454a;
+  transition: all 150ms ease-in-out;
+}
+
+.social-media nav a:hover {
+  color: #161515;
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+
+@media all and (max-width: 56.25em) {
+  h3 {
+    padding-top: 1.5em;
+    padding-bottom: 0.8em;
+  }
+
+  h4 {
+    font-size: 2.5em;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+  }
+
+  footer {
+    justify-content: space-evenly;
+    padding: 1.7em 0.5em;
+  }
+
+  #first-section,
+  #second-section,
+  #header-section {
+    grid-template-columns: 30% 70%;
+  }
+
+  #first-section .right-first-section {
+    padding: 0.7em 3.1em 3em 3.1em;
+  }
+
+  #first-section .right-first-section h1 {
+    font-size: 3em;
+    margin: 0.2em 0em;
+  }
+
+  #first-section .right-first-section p {
+    margin: 1.5em 0em;
+  }
+
+  #fourth-section .sides-50 ul {
+    padding-inline-start: 0em;
+  }
+}
+
+@media all and (max-width: 50.19em) {
+  .navigation-bar nav a {
+    font-size: 0.9em;
+  }
+}
+
+@media all and (max-width: 46.25em) {
+  #first-section,
+  #second-section,
+  #header-section {
+    grid-template-columns: 1fr;
+  }
+
+  #first-section .left-first-section img {
+    width: 40%;
+    padding: 1.2em 0em;
+  }
+
+  #first-section .right-first-section {
+    padding: 3.3em 3.1em;
+  }
+
+  #second-section img {
+    width: 35%;
+    margin: 0.7em auto;
+  }
+
+  #second-section .right-second-section {
+    padding: 2.82em 2.82em;
+  }
+
+  #third-section .navigation-sushis nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.6em 0em;
+  }
+  #third-section nav a {
+    width: 20%;
+    margin: 0.8em 1.5em;
+  }
+
+  #fourth-section .sides-50 ul li {
+    font-size: 0.85em;
+  }
+
+  #fifth-section {
+    padding: 4.25em 0.94em;
+  }
+  footer .logo-sushiman {
+    display: block;
+    margin: 0 auto;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 46.25em) {
+  #third-section .card {
+    margin: 0.85em;
+  }
+
+  #third-section .card-small {
+    margin: 1.75em 0.8em;
+  }
+  #third-section .card-main h5 {
+    font-size: 1.3em;
+  }
+
+  #third-section .cards p {
+    font-size: 0.9em;
+  }
+}
+
+@media all and (max-width: 41.56em) {
+  #fourth-section .sides-50 {
+    grid-template-columns: 1fr;
+  }
+
+  #fourth-section .sides-small-50 {
+    grid-template-columns: 1fr 1fr;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0em;
+  }
+
+  #fifth-section button {
+    width: 40%;
+    display: block;
+    margin: 1.5em auto;
+  }
+}
+
+@media all and (max-width: 35em) {
+  .navigation-bar nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navigation-bar nav a {
+    margin: 0.4em 1em;
+  }
+
+  #third-section .cards {
+    grid-template-columns: 1fr;
+    width: 70%;
+  }
+
+  #fifth-section h1 {
+    font-size: clamp(1.4em, 5vw, 2.2em);
+  }
+}
+
+@media all and (max-width: 19.6em) {
+  header {
+    width: 100%;
+  }
+  #third-section nav a {
+    padding: 0.95em 1.25em;
+    margin: 0.8em 1.5em;
+    font-size: 0.9em;
+  }
+  #fourth-section .sides-small-50 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (hover: hover) {
+  button hover {
+    background-color: #b1454a;
+    border: 1px solid #b1454a;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1d1919;
+  }
+  #header-section,
+  #first-section .right-first-section {
+    background-color: #302d2d;
+  }
+  #second-section .right-second-section {
+    background-color: #1d1919;
+  }
+  .navigation-bar nav a {
+    color: rgb(241, 240, 240);
+  }
+  #first-section .right-first-section h1,
+  #first-section .right-first-section p,
+  #second-section .right-second-section p,
+  .subtitle-red,
+  h2 {
+    color: white;
+  }
+
+  button {
+    background-color: #b1454a;
+    border: 1px solid #b1454a;
+    color: white;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-color: #b8595c;
+    border: 1px solid #b8595c;
+  }
+  #second-section .left-second-section,
+  #fourth-section .sides-50 .half-beige,
+  footer,
+  footer nav {
+    background-color: #c2b29b;
+  }
+  #third-section .card-main {
+    border: 1px solid #303030;
+    background-color: #303030;
+  }
+
+  #third-section .card-small {
+    border: 1px solid #1a18186b;
+    background-color: #1a18189c;
+    color: white;
+  }
+  #third-section .card-main h5,
+  #third-section .card-main p {
+    color: white;
+  }
+  #third-section button {
+    background-color: black;
+    color: white;
+  }
+  #fourth-section .sides-50 .half-white {
+    background-color: #1d1919;
+  }
+  h4,
+  #fourth-section p,
+  #fourth-section .sides-50 ul li {
+    color: white;
+  }
+  form button {
+    background-color: #161515;
+  }
+  footer .navigation-bar nav a,
+  .social-media nav a {
+    color: #161515;
+  }
+
+  .social-media nav a:hover {
+    color: #b14550;
+  }
+}

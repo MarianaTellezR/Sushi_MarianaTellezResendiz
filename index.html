@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 2 - Mariana Tellez Resendiz</title>
+    <!--CSS Stylesheet-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--Font Awesome Kit-->
+    <script
+      src="https://kit.fontawesome.com/2237014ddd.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Playfair+Display:wght@400;500;600&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <section id="header-section">
+        <section class="logo-header">
+          <img
+            src="img/logo-white.png"
+            alt="Logo Oficial Sushiman"
+            title="SUSHIMAN"
+            class="logo-sushiman"
+          />
+        </section>
+
+        <section class="navigation-bar flex-column-justifycenter">
+          <nav>
+            <a href="index.html">Menú</a>
+            <a href="index.html">Foods</a>
+            <a href="index.html">Services</a>
+            <a href="index.html">About us</a>
+            <a><i class="fa-solid fa-magnifying-glass"></i></a>
+          </nav>
+        </section>
+      </section>
+    </header>
+    <main>
+      <article>
+        <!--First Section-->
+        <section id="first-section">
+          <div class="left-first-section">
+            <!--Fondo Rojo Image Sushi-->
+            <img
+              src="img/sushi-main.png"
+              alt="Japanese food"
+              title="Japanese food"
+            />
+          </div>
+          <div class="right-first-section flex-column-justifycenter">
+            <section>
+              <h1>Feel the taste of Japanese food</h1>
+              <p>
+                Feel the taste of the most popular Japanese food from anywhere
+                at anytime.
+              </p>
+              <button>Order Now</button>
+            </section>
+          </div>
+        </section>
+
+        <!--Second Section-->
+        <section id="second-section">
+          <div class="left-second-section">
+            <!--Dos imagenes de sushi con fondo beige, boton centrado-->
+            <img
+              src="img/sushi-9.png"
+              alt="Special Sushi"
+              title="Special Sushi"
+            />
+            <button>Learn more</button>
+            <img src="img/sushi-4.png" alt="Meat Sushi" title="Meat Sushi" />
+          </div>
+          <div class="right-second-section flex-column-justifycenter">
+            <p class="subtitle-red">About us</p>
+            <h2>Our mission is to bring true Japanese flavors to you.</h2>
+            <p>
+              We will continue to provide the experience of Omotenashi, the
+              Japanese mindset of hospitality, with our shopping and dining for
+              our customers.
+            </p>
+          </div>
+        </section>
+
+        <!--Third Section-->
+        <section id="third-section">
+          <h3>Popular Food</h3>
+          <section class="navigation-sushis">
+            <nav>
+              <a href="index.html">All</a>
+              <a href="index.html"
+                ><img
+                  src="img/sushi-8.png"
+                  alt="Sushi"
+                  class="options-japanese"
+                />
+                Sushi</a
+              >
+              <a href="index.html"
+                ><img
+                  src="img/ramen.png"
+                  alt="Ramen"
+                  class="options-japanese"
+                />
+                Ramen</a
+              >
+              <a href="index.html"
+                ><img
+                  src="img/sushi-6.png"
+                  alt="Nigiri"
+                  class="options-japanese"
+                />
+                Nigiri</a
+              >
+              <a href="index.html">Others</a>
+            </nav>
+          </section>
+          <section class="cards">
+            <!--Card 1-->
+            <div class="card card-small">
+              <!--Imagen Chezu Sushi-->
+              <img
+                src="img/sushi-12.png"
+                alt="Chezu Sushi"
+                title="Chezu Sushi"
+              />
+              <h5>Chezu Sushi</h5>
+              <section class="star-price">
+                <div>
+                  <p><i class="fa-solid fa-star" id="star-color"></i> 4.6</p>
+                </div>
+                <div>
+                  <p>$16.00</p>
+                </div>
+              </section>
+            </div>
+            <!--Card 2-->
+            <div class="card card-main">
+              <!--Imagen Original Sushi-->
+              <img
+                src="img/sushi-5.png"
+                alt="Original Nigiri"
+                title="Original Nigiri"
+              />
+              <h5>Original Nigiri</h5>
+              <section class="star-price">
+                <div>
+                  <p><i class="fa-solid fa-star" id="star-color"></i> 4.9</p>
+                </div>
+                <div>
+                  <p>$21.00</p>
+                </div>
+              </section>
+            </div>
+            <!--Card 3-->
+            <div class="card card-small">
+              <!--Imagen Ramen Legendo-->
+              <img
+                src="img/ramen.png"
+                alt="Ramen Legendo"
+                title="Ramen Legendo"
+              />
+              <h5>Ramen Legendo</h5>
+              <section class="star-price">
+                <div>
+                  <p><i class="fa-solid fa-star" id="star-color"></i> 4.7</p>
+                </div>
+                <div>
+                  <p>$18.00</p>
+                </div>
+              </section>
+            </div>
+          </section>
+          <button>Explore foods</button>
+        </section>
+
+        <!--Fourth Section-->
+        <section id="fourth-section">
+          <section class="sides-50">
+            <div class="half-white flex-column-justifycenter">
+              <p class="subtitle-red">What's Trending</p>
+              <h4>Japanese Sushi</h4>
+              <p>
+                Treat your palate to the exceptional flavors of the finest
+                sushi, expertly crafted by our skilled chefs for an
+                unforgettable dining experience.
+              </p>
+              <section class="sides-50 sides-small-50">
+                <div>
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-circle-check check-red"></i>
+                      Maki Sushi
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check check-red"></i>
+                      Nigiri Sushi
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check check-red"></i>
+                      Oshizushi
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-circle-check check-red"></i>
+                      Temaki Sushi
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check check-red"></i>
+                      Uramaki Sushi
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check check-red"></i>
+                      Inari Sushi
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+            <div class="half-beige centrado">
+              <!--Imagen Sushi, fondo beige-->
+              <img
+                src="img/sushi-10.png"
+                alt="Gunkan Sushi"
+                title="Gunkan Sushi"
+              />
+            </div>
+          </section>
+          <section class="sides-50">
+            <div class="half-beige centrado">
+              <!--Imagen Drinks, fondo beige-->
+              <img
+                src="img/drink.png"
+                alt="Japanese Tea"
+                title="Japanese Tea"
+              />
+            </div>
+            <div class="half-white flex-column-justifycenter">
+              <p class="subtitle-red">What's Trending</p>
+              <h4>Japanese Drinks</h4>
+              <p>
+                Experience the flavors of the most exquisite Japanese beverages
+                right here.
+              </p>
+              <section class="sides-50 sides-small-50">
+                <div>
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-circle-check check-red"></i>
+                      Oruncha
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check check-red"></i>
+                      Ofukucha
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check check-red"></i>
+                      Sakura Tea
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-circle-check check-red"></i>
+                      Kombu-cha
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check check-red"></i>
+                      Aojiru
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check check-red"></i>
+                      Mugicha
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </section>
+        </section>
+
+        <!--Fifth Section-->
+        <section id="fifth-section">
+          <h1>Get discounts straight to your inbox</h1>
+          <p>Sign up for the Sushiman newsletter.</p>
+          <form>
+            <input
+              type="email"
+              id="correo"
+              name="correo"
+              required
+              placeholder="Enter your email address"
+            />
+            <button>Get Started</button>
+          </form>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <img
+        src="img/logo.png"
+        alt="Logo Oficial Sushiman"
+        title="SUSHIMAN"
+        class="logo-sushiman"
+      />
+      <section class="navigation-bar flex-column-justifycenter">
+        <nav>
+          <a href="index.html">Menú</a>
+          <a href="index.html">Foods</a>
+          <a href="index.html">Services</a>
+          <a href="index.html">About us</a>
+        </nav>
+      </section>
+      <section class="social-media">
+        <nav>
+          <a><i class="fa-brands fa-instagram"></i></a>
+          <a><i class="fa-brands fa-facebook-f"></i></a>
+          <a><i class="fa-brands fa-twitter"></i></a>
+        </nav>
+      </section>
+    </footer>
+  </body>
+</html>
