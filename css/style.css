@@ -1,38 +1,45 @@
-/*
-font-family: 'Montserrat', sans-serif;
-font-family: 'Playfair Display', serif;
-font-family: 'Poppins', sans-serif;
-*/
-body {
-  margin: 0 auto;
-}
-
 h1,
 h2,
 h3,
 h4,
-h5,
-.customers {
+h5 {
   font-family: "Playfair Display", serif;
+}
+
+h2 {
+  font-size: 3.125em;
+}
+
+h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 2.5em;
+  text-align: center;
+  color: white;
+  padding-top: 1.7em;
+  padding-bottom: 1.5em;
+}
+
+h4 {
+  font-size: 2.5em;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+h5 {
+  font-size: 1.25em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
 }
 
 nav > a,
 p,
-button,
-quote {
+button {
   font-family: "Montserrat", sans-serif;
 }
 
 ul > li {
   font-family: "Poppins", sans-serif;
-}
-
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 2em 2.5em;
-  background-color: #fef0de;
 }
 
 button {
@@ -51,45 +58,50 @@ button:hover {
   border: 1px solid #b1454a;
 }
 
-.subtitle-red {
+/* General */
+
+.red {
   color: #b1454a;
 }
 
-#star-color {
+.yellow {
   color: #fbd446;
 }
 
-.check-red {
-  color: #b14550;
-}
-
-.centrado {
+.column__center {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
-#header-section .logo-header {
+/* HEADER */
+
+.header {
+  background-color: #ffeff0;
+}
+
+.header__logo {
   text-align: center;
   background-color: #b1454a;
   padding: 1.9em 0em;
 }
 
-#header-section {
-  background-color: #ffeff0;
+.header__image,
+.footer__image {
+  max-width: 11.25em;
+  min-width: 7.5em;
+  width: 30%;
 }
 
-footer nav {
-  background-color: #fef0de;
-}
-
-.navigation-bar {
+.header__navigation,
+.footer__navigation {
   align-content: center;
   flex-wrap: wrap;
   padding: 1.9em 0em;
 }
 
-.navigation-bar nav a {
+.header__link,
+.footer__link {
   text-transform: uppercase;
   text-decoration: none;
   margin: 0em 1em;
@@ -98,123 +110,91 @@ footer nav {
   transition: all 150ms ease-in-out;
 }
 
-.navigation-bar nav a:hover {
+.header__link:hover,
+.footer__link:hover {
   color: #b1454a;
   cursor: pointer;
 }
 
-.logo-sushiman {
-  max-width: 11.25em;
-  min-width: 7.5em;
-  width: 30%;
-}
-
-/* Clase reutilizable d-flex flex-column justify-center*/
-
-.flex-column-justifycenter {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 /* First Section */
 
-#first-section,
-#second-section,
-#header-section {
+.first,
+.second,
+.header {
   display: grid;
   grid-template-columns: 40% 60%;
   margin: 0 auto;
 }
 
-#first-section .left-first-section {
+.first__left {
   background-color: #b1454a;
 }
 
-#first-section .left-first-section img {
+.first__image {
   width: 70%;
   display: block;
   margin: 0 auto;
   padding: 1.9em 0em;
 }
 
-#first-section .right-first-section {
+.first__right {
   align-items: center;
   padding: 0.7em 3.1em;
   background-color: #ffeff0;
 }
 
-#first-section .right-first-section h1 {
+.first__h1 {
   font-size: 3.75em;
   margin-top: 1.25em;
   margin-bottom: 1em;
 }
 
-#first-section .right-first-section p {
+.first__p {
   margin: 2.19em 0em;
   font-size: 1.125em;
 }
 
 /*Second Section*/
-#second-section {
+
+.second {
   margin: 0px;
 }
-#second-section div {
-  padding: 2.5em 0.625em;
-}
 
-#second-section img {
+.second__image {
   display: block;
   margin: 1.25em auto;
   width: 70%;
   max-width: 18.75em;
 }
 
-#second-section button {
+.second__button {
   display: block;
   margin: 1em auto;
 }
 
-#second-section .left-second-section {
+.second__left {
   background-color: #f8eddf;
+  padding: 2.5em 0.625em;
 }
 
-#second-section .right-second-section {
+.second__right {
   padding: 1.875em 2.82em;
-}
-
-h2 {
-  font-size: 3.125em;
 }
 
 /*Third Section*/
 
-#third-section {
+.third {
   background-color: #b1454a;
   margin: 0em;
   padding-bottom: 1.75em;
 }
 
-h3 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-size: 2.5em;
-  text-align: center;
-  color: white;
-  padding-top: 1.7em;
-  padding-bottom: 1.5em;
-}
-
-#third-section .options-japanese {
-  width: 1.25em;
-}
-
-#third-section .navigation-sushis {
+.third__navigation {
   text-align: center;
   margin: 1.875em 0em;
 }
 
-#third-section nav a {
+.third__link {
   border: 1px solid white;
   padding: 0.95em 1.25em;
   margin: 0em 0.625em;
@@ -224,12 +204,17 @@ h3 {
   font-size: 1.19em;
   transition: all 180ms ease-in-out;
 }
-#third-section nav a:hover {
+
+.third__link:hover {
   background-color: #161515;
   border: 1px solid #161515;
 }
 
-#third-section .cards {
+.third__options {
+  width: 1.25em;
+}
+
+.third__cards {
   display: grid;
   grid-template-columns: 33% 34% 33%;
   grid-gap: 0em;
@@ -237,108 +222,101 @@ h3 {
   width: 90%;
 }
 
-#third-section .card {
+.third__card {
   border-radius: 25px;
   margin: 0.94em;
   padding: 0.94em;
   text-align: center;
 }
 
-#third-section .card-small {
+.third__card--small {
   margin: 1.75em;
   border: 1px solid #f0f0f048;
   background-color: #f0f0f02f;
   color: white;
 }
-#third-section .card-main {
+
+.third__card--big {
   border: 1px solid #ffffff;
   background-color: #ffffff;
 }
 
-#third-section .cards img {
+.third__image {
   width: 75%;
 }
 
-h5 {
-  font-size: 1.25em;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-}
-
-#third-section .card-main h5 {
+.third__h5 {
   font-size: 1.69em;
   color: #585858;
 }
 
-#third-section .star-price {
+.third .star-price {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-#third-section .cards p {
+.third__cards p {
   margin-top: 0.94em;
   margin-bottom: 1.875em;
   font-size: 1.125em;
 }
 
-#third-section button {
+.third button {
   text-align: center;
   display: block;
   margin: 1.25em auto;
   transition: all 120ms ease-in-out;
 }
 
-#third-section button:hover {
+.third button:hover {
   color: white;
   background-color: #2c2b2b;
 }
 
 /* Fourth Section */
-#fourth-section .sides-50 {
+
+.fourth__sides {
   display: grid;
   grid-template-columns: 50% 50%;
 }
 
-#fourth-section .sides-50 img {
+.fourth__sides img {
   width: 55%;
   max-width: 25em;
   display: block;
   margin: 4.375em auto;
 }
 
-#fourth-section .sides-50 .half-beige {
+.fourth__beige {
   background-color: #fef0de;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#fourth-section .sides-50 .half-white {
+.fourth__white {
   margin: 0em auto;
   padding: 0.625em 3.125em;
 }
 
-h4 {
-  font-size: 2.5em;
-  margin-top: 1.25em;
-  margin-bottom: 1.25em;
-}
-
-#fourth-section .sides-50 ul {
+.fourth__ul {
   padding-inline-start: 1em;
 }
 
-#fourth-section .sides-50 ul li {
+.fourth__li {
   list-style: none;
 }
 
 /* Fifth Section */
 
-#fifth-section {
+.fifth {
   background-color: #b1454a;
   padding: 6.25em 0.94em;
   text-align: center;
 }
 
-#fifth-section h1 {
+.fifth__h1 {
   display: block;
   margin: 0em;
   padding: 0.625em;
@@ -346,16 +324,16 @@ h4 {
   font-size: 3.75em;
 }
 
-#fifth-section p {
+.fifth p {
   color: white;
   padding: 1.25em 0.94em;
 }
 
-#fifth-section button:hover {
+.fifth__button:hover {
   background-color: #313131;
 }
 
-#fifth-section form input {
+.fifth__form input {
   padding: 0.82em 1.25em;
   margin: 0em 0.94em;
   font-size: 1.25em;
@@ -365,21 +343,33 @@ h4 {
 
 /* FOOTER */
 
-.social-media {
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2em 2.5em;
+  background-color: #fef0de;
+}
+
+.footer__nav {
+  background-color: #fef0de;
+}
+
+.footer__social {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.social-media nav a {
+.footer__socialink {
   margin: 0em 0.625em;
   font-size: 1.3125em;
   color: #b1454a;
   transition: all 150ms ease-in-out;
 }
 
-.social-media nav a:hover {
+.footer__socialink:hover {
   color: #161515;
   cursor: pointer;
 }
@@ -398,129 +388,134 @@ h4 {
     margin-bottom: 0.4em;
   }
 
-  footer {
+  .footer {
     justify-content: space-evenly;
     padding: 1.7em 0.5em;
   }
 
-  #first-section,
-  #second-section,
-  #header-section {
+  .first,
+  .second,
+  .header {
     grid-template-columns: 30% 70%;
   }
 
-  #first-section .right-first-section {
+  .first__right {
     padding: 0.7em 3.1em 3em 3.1em;
   }
 
-  #first-section .right-first-section h1 {
+  .first__h1 {
     font-size: 3em;
     margin: 0.2em 0em;
   }
 
-  #first-section .right-first-section p {
+  .first__p {
     margin: 1.5em 0em;
   }
 
-  #fourth-section .sides-50 ul {
+  .fourth__ul {
     padding-inline-start: 0em;
   }
 }
 
 @media all and (max-width: 50.19em) {
-  .navigation-bar nav a {
+  .header__link,
+  .footer__link {
     font-size: 0.9em;
   }
 }
 
 @media all and (max-width: 46.25em) {
-  #first-section,
-  #second-section,
-  #header-section {
+  .first,
+  .second,
+  .header {
     grid-template-columns: 1fr;
   }
 
-  #first-section .left-first-section img {
+  .first__image {
     width: 40%;
     padding: 1.2em 0em;
   }
 
-  #first-section .right-first-section {
+  .first__right {
     padding: 3.3em 3.1em;
   }
 
-  #second-section img {
+  .second__image {
     width: 35%;
     margin: 0.7em auto;
   }
 
-  #second-section .right-second-section {
+  .second__right {
     padding: 2.82em 2.82em;
   }
 
-  #third-section .navigation-sushis nav {
+  .third__nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0.6em 0em;
   }
-  #third-section nav a {
+
+  .third__link {
     width: 20%;
     margin: 0.8em 1.5em;
   }
 
-  #fourth-section .sides-50 ul li {
+  .fourth__li {
     font-size: 0.85em;
   }
 
-  #fifth-section {
+  .fifth {
     padding: 4.25em 0.94em;
   }
-  footer .logo-sushiman {
-    display: block;
-    margin: 0 auto;
-  }
 
-  footer {
+  .footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
+
+  .footer__image {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 @media all and (max-width: 46.25em) {
-  #third-section .card {
+  .third__card {
     margin: 0.85em;
   }
 
-  #third-section .card-small {
+  .third__card--small {
     margin: 1.75em 0.8em;
   }
-  #third-section .card-main h5 {
+
+  .third__h5 {
     font-size: 1.3em;
   }
 
-  #third-section .cards p {
+  .third__cards p {
     font-size: 0.9em;
   }
 }
 
 @media all and (max-width: 41.56em) {
-  #fourth-section .sides-50 {
+  .fourth__sides {
     grid-template-columns: 1fr;
   }
 
-  #fourth-section .sides-small-50 {
+  .fourth .sides-small-50 {
     grid-template-columns: 1fr 1fr;
   }
-  form {
+
+  .fifth__form {
     display: flex;
     flex-direction: column;
     margin-top: 0em;
   }
 
-  #fifth-section button {
+  .fifth__button {
     width: 40%;
     display: block;
     margin: 1.5em auto;
@@ -528,66 +523,63 @@ h4 {
 }
 
 @media all and (max-width: 35em) {
-  .navigation-bar nav {
+  .header__nav,
+  .footer__nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .navigation-bar nav a {
+  .header__link,
+  .footer__link {
     margin: 0.4em 1em;
   }
 
-  #third-section .cards {
+  .third__cards {
     grid-template-columns: 1fr;
     width: 70%;
   }
 
-  #fifth-section h1 {
+  .fifth__h1 {
     font-size: clamp(1.4em, 5vw, 2.2em);
   }
 }
 
 @media all and (max-width: 19.6em) {
-  header {
-    width: 100%;
-  }
-  #third-section nav a {
+  .third__link {
     padding: 0.95em 1.25em;
     margin: 0.8em 1.5em;
     font-size: 0.9em;
   }
-  #fourth-section .sides-small-50 {
-    grid-template-columns: 1fr;
-  }
-}
 
-@media (hover: hover) {
-  button hover {
-    background-color: #b1454a;
-    border: 1px solid #b1454a;
+  .fourth .sides-small-50 {
+    grid-template-columns: 1fr;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #1d1919;
-  }
-  #header-section,
-  #first-section .right-first-section {
     background-color: #302d2d;
   }
-  #second-section .right-second-section {
-    background-color: #1d1919;
+
+  .header,
+  .first__right {
+    background-color: #302d2d;
   }
-  .navigation-bar nav a {
+
+  .second__right {
+    background-color: #1a1616;
+  }
+
+  .header__link,
+  .footer__link {
     color: rgb(241, 240, 240);
   }
-  #first-section .right-first-section h1,
-  #first-section .right-first-section p,
-  #second-section .right-second-section p,
-  .subtitle-red,
+
+  .first__h1,
+  .first__p,
+  .second__p,
   h2 {
     color: white;
   }
@@ -603,47 +595,55 @@ h4 {
     background-color: #b8595c;
     border: 1px solid #b8595c;
   }
-  #second-section .left-second-section,
-  #fourth-section .sides-50 .half-beige,
-  footer,
-  footer nav {
+
+  .second__left,
+  .fourth__beige,
+  .footer,
+  .footer__nav {
     background-color: #c2b29b;
   }
-  #third-section .card-main {
+
+  .third__card--big {
     border: 1px solid #303030;
     background-color: #303030;
   }
 
-  #third-section .card-small {
+  .third__card--small {
     border: 1px solid #1a18186b;
     background-color: #1a18189c;
     color: white;
   }
-  #third-section .card-main h5,
-  #third-section .card-main p {
+
+  .third__h5,
+  .third__card--big p {
     color: white;
   }
-  #third-section button {
+
+  .third button {
     background-color: black;
     color: white;
   }
-  #fourth-section .sides-50 .half-white {
+
+  .fourth__white {
     background-color: #1d1919;
   }
+
   h4,
-  #fourth-section p,
-  #fourth-section .sides-50 ul li {
+  .fourth p,
+  .fourth__li {
     color: white;
   }
-  form button {
+
+  .fifth__button {
     background-color: #161515;
   }
-  footer .navigation-bar nav a,
-  .social-media nav a {
+
+  .footer__link,
+  .footer__socialink {
     color: #161515;
   }
 
-  .social-media nav a:hover {
+  .footer__socialink:hover {
     color: #b14550;
   }
 }
